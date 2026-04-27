@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .bd {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .rem {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        border: none;
+        background: #4facfe;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #00c6ff;
+    }
+    </style>
+</head>
+<body>
+    <div class="bd">
+    <h1>Login</h1>
+    <p>Welcome to brand meet to explore the new thigs</p>
+    <section>
+        <legend>Email id</legend>
+        <input type="email" placeholder="Enter your email">
+        <legend>Password</legend>
+        <input type="password" placeholder="Enter a password" >
+        <input type="checkbox" >Remender me
+    </section>
+    <button onclick="Fun()">Login</button>
+    </div>
+</body>
+</html>
