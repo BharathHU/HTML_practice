@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrolling Text</title>
+
+<style>
+.pg{
+    background-color: aqua;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.para{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    font-size: xx-large;
+    animation-direction:alternate;
+    animation-play-state: running;
+    animation-delay: 0.0s;
+
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+body{
+@media (max-width: 600px) {
+    .para{
+        font-size: large;
+    }
+}
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <h1>Hello World</h1>
+
+    <div class="pg">
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid voluptate, est nobis sunt repellendus odit non? Obcaecati blanditiis, exercitationem nobis, reiciendis iure ipsa odio itaque debitis quae earum ipsam.
+        </p>
+    </div>
 </body>
 </html>
